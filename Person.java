@@ -55,36 +55,3 @@ public class Student extends Person {
         return firstInitial + lastPart + fourDigits;
     }
 }
-
-Write a complete class Employee which extends Person. An Employee should have
-additional attributes for an ID number which are set through the
-Employee constructor. The salary instance variable should be changable through
-a setSalary method and readable through a getSalary method. Finally, 
-
-public class Employee extends Person {
-
-    private String idNumber;
-    private double salary;
-
-    public Employee(String firstName, String lastName, String idNumber, double salary) {
-        super(firstName, lastName);
-        this.idNumber = idNumber;
-        this.salary = salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
-    } 
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public String toString() {
-        return super.toString() + " " + idNumber;
-    }
-
-}
-
-// setTitle / getTitle
-// can I extend Employee somehow?
